@@ -4,19 +4,19 @@ self.__precacheManifest = [
     "url": "/textgames/static/js/runtime~main.fc0462f1.js"
   },
   {
-    "revision": "508353fd3ab75ca6286a",
-    "url": "/textgames/static/js/main.508353fd.chunk.js"
+    "revision": "1a2c3fd96e46d9325533",
+    "url": "/textgames/static/js/main.1a2c3fd9.chunk.js"
   },
   {
     "revision": "2de1b0a3376a1093608d",
     "url": "/textgames/static/js/1.2de1b0a3.chunk.js"
   },
   {
-    "revision": "508353fd3ab75ca6286a",
+    "revision": "1a2c3fd96e46d9325533",
     "url": "/textgames/static/css/main.bf125c55.chunk.css"
   },
   {
-    "revision": "e2c4d730e998769a40e6dcff8cf0fe9f",
+    "revision": "3bcc36c8b775447d076185bf9cdf7213",
     "url": "/textgames/index.html"
   }
 ];
