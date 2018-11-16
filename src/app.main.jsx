@@ -20,13 +20,13 @@ export default class ServerMain extends React.Component{
                 <h1>Service Status Check</h1>
             </header>
             <nav>
-                <Link to="/textgames/datadog">DataDog</Link>
-                <Link to="/textgames/azure">Azure</Link>
+                <Link to="/datadog">DataDog</Link>
+                <Link to="/azure">Azure</Link>
             </nav>
             <main>
                 <Switch>
-                    <Route path='/textgames/datadog' component={ActualDatadog} />
-                    <Route path='/textgames/azure' component={ActualAzure} />
+                    <Route path='/datadog' component={ActualDatadog} />
+                    <Route path='/azure' component={ActualAzure} />
                 </Switch>
             </main>
             <footer>
