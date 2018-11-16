@@ -78,32 +78,32 @@ export var StatusServiceHttp={
 			//const rssFeed = parser.parseFromString(tempFeed, 'text/xml');
 			const items = rssFeed.querySelectorAll("item");
 
-			for (let i = 0; i < items.length; i++) {
-				for (let j = 0; j < this.azureLocs.length; j++) {
-					var myLocation = this.azureLocs[j];
-					var myRegex = new RegExp(this.azureLocRegex[j]);
+			
+			for (let j = 0; j < this.azureLocs.length; j++) {
+				var virtualStatus = "OK";
+				var cloudStatus = "OK";
+				var functionStatus = "OK";
+				var myLocation = this.azureLocs[j];
+				var myRegex = new RegExp(this.azureLocRegex[j]);
+
+				for (let i = 0; i < items.length; i++) {
 					var itemTitle = items[i].getElementsByTagName("title")[0].childNodes[0].nodeValue;
 					var itemDescription = items[i].getElementsByTagName("description")[0].childNodes[0].nodeValue;
-
-					var myVirtualStatus = "OK";
-					var myCloudStatus = "OK";
-					var myFunctionStatus = "OK";
 
 					var isFoundInTitle = myRegex.test(itemDescription);
 					var isFoundInDesc = myRegex.test(itemDescription);
 
 					if (isFoundInTitle || isFoundInDesc) {
 						var myStatusRegex = new RegExp("Virtual Machines");
-						myVirtualStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
+						virtualStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
 						myStatusRegex = new RegExp("Cloud Cervices");
-						myCloudStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
+						cloudStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
 						myStatusRegex = new RegExp("Functions");
-						myFunctionStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
+						functionStatus = (myStatusRegex.test(itemTitle) || myStatusRegex.test(itemDescription)) ? "NOK" : "OK";
 					}
-
-					this.azureStatuses.push({"location": myLocation, "virtualStatus": myVirtualStatus,
-						"cloudStatus": myCloudStatus, "functionStatus": myFunctionStatus, id:j});
 				}
+				this.azureStatuses.push({"location": myLocation, "virtualStatus": virtualStatus,
+				"cloudStatus": cloudStatus, "functionStatus": functionStatus, id:j});
 			}
 
             statusStore.dispatch(StatusActions.gotNewAzureStatus(this.azureStatuses));
