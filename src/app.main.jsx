@@ -25,7 +25,6 @@ export default class ServerMain extends React.Component{
             </nav>
             <main>
                 <Switch>
-                    <Route exact path='/' component={ActualDatadog} />
                     <Route path='/datadog' component={ActualDatadog} />
                     <Route path='/azure' component={ActualAzure} />
                 </Switch>
