@@ -1,13 +1,13 @@
 {
-  "main.css": "/react-test/static/css/main.bf125c55.chunk.css",
-  "main.js": "/react-test/static/js/main.7c98757a.chunk.js",
-  "main.js.map": "/react-test/static/js/main.7c98757a.chunk.js.map",
-  "static/js/1.2de1b0a3.chunk.js": "/react-test/static/js/1.2de1b0a3.chunk.js",
-  "static/js/1.2de1b0a3.chunk.js.map": "/react-test/static/js/1.2de1b0a3.chunk.js.map",
-  "runtime~main.js": "/react-test/static/js/runtime~main.745cc6a5.js",
-  "runtime~main.js.map": "/react-test/static/js/runtime~main.745cc6a5.js.map",
-  "static/css/main.bf125c55.chunk.css.map": "/react-test/static/css/main.bf125c55.chunk.css.map",
-  "index.html": "/react-test/index.html",
-  "precache-manifest.4cadd07fee60a0d32f8b051b42ba0678.js": "/react-test/precache-manifest.4cadd07fee60a0d32f8b051b42ba0678.js",
-  "service-worker.js": "/react-test/service-worker.js"
+  "main.css": "/textgames/static/css/main.bf125c55.chunk.css",
+  "main.js": "/textgames/static/js/main.5222fb2e.chunk.js",
+  "main.js.map": "/textgames/static/js/main.5222fb2e.chunk.js.map",
+  "static/js/1.2de1b0a3.chunk.js": "/textgames/static/js/1.2de1b0a3.chunk.js",
+  "static/js/1.2de1b0a3.chunk.js.map": "/textgames/static/js/1.2de1b0a3.chunk.js.map",
+  "runtime~main.js": "/textgames/static/js/runtime~main.fc0462f1.js",
+  "runtime~main.js.map": "/textgames/static/js/runtime~main.fc0462f1.js.map",
+  "static/css/main.bf125c55.chunk.css.map": "/textgames/static/css/main.bf125c55.chunk.css.map",
+  "index.html": "/textgames/index.html",
+  "precache-manifest.c8b9a7b3fbf7aaf9780a6b479dd19faf.js": "/textgames/precache-manifest.c8b9a7b3fbf7aaf9780a6b479dd19faf.js",
+  "service-worker.js": "/textgames/service-worker.js"
 }
