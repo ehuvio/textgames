@@ -2,7 +2,7 @@
   "name": "react-test",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ehuvio.github.io/react-test",
+  "homepage": "https://ehuvio.github.io/textgames",
   "dependencies": {
     "gh-pages": "^2.0.1",
     "react": "^16.6.0",
